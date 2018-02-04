@@ -36,6 +36,9 @@ def find_products_of_others(nums):
        >>> find_products_of_others([4, 9])
        [9, 4]
 
+       >>> find_products_of_others([1, 5, 0, 3, 5])
+       [0, 0, 75, 0, 0]
+
     """
 
     #make sure we have enough numbers
