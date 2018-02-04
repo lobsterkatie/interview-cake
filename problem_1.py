@@ -50,9 +50,6 @@ def get_max_profit(stock_prices):
         #lowest price before the current price
         mins_to_left.append(min(mins_to_left[i-1], stock_prices[i-1]))
 
-    # print stock_prices
-    # print mins_to_left
-
     max_profit = 0
     for i, price in enumerate(stock_prices):
         #you can't sell in the first minute, because you haven't bought anything
@@ -110,11 +107,6 @@ def get_max_profit2(stock_prices):
     return max_profit
 
 
-
-if __name__ == "__main__":
-    print
-    import doctest
-    if doctest.testmod().failed == 0:
-        print "*** ALL TESTS PASSED ***"
-    print
-
+import doctest
+if doctest.testmod().failed == 0:
+    print "*** ALL TESTS PASSED ***"
